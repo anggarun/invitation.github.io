@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.over {
+  overflow: hidden;
+}
+.index {
+  flex-direction: column;
+  padding-top: 150px;
+}
+.index h4,
+p {
+  font-size: 1.5rem;
+}
+.index h1 {
+  font-family: "sacramento";
+  font-weight: bold;
+}
+.index h4,
+h1,
+p {
+  font-family: "Alkatra";
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: px #f8f8f8;
+  text-shadow: 0px 1px 4px #23430c;
+  margin-bottom: 30px;
+}
+.index ::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-image: url(img/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  fill-opacity: 0.5;
+  margin-top: 0;
+}
+.btn {
+  color: white;
+  border: 1px solid white;
+  background-color: pink;
+  font-family: "Alkatra";
+}
+.btn :hover {
+  color: pink !important;
+  border: 1px solid pink !important;
+  background-color: white !important;
+  font-family: "Alkatra";
+}
+.ff {
+  font-family: "sacramento";
+  font-size: 1.5rem;
+}
+
+/* media query */
+
+/* laptop */
+@media (max-width: 992px) {
+  .index h4,
+  p {
+    font-size: 1.2rem;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  .index h4,
+  p {
+    font-size: 1rem;
+  }
+}
+/* mobile */
+@media (max-width: 576) {
+  .index h4,
+  p {
+    font-size: 0.8rem;
+  }
+}
