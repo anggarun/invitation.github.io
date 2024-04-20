@@ -3,29 +3,29 @@ body {
   padding: 0;
 }
 
-.index {
-  margin: auto;
+.hero {
   padding-top: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.index h4,
-p {
-  font-size: 2rem;
-}
-.index h1 {
+
+.hero h1 {
   font-family: "sacramento";
-  font-size: 4rem;
+  font-weight: bolder;
 }
-.index h4,
+.hero h4,
 h1,
-p {
+h2 {
   font-family: "Alkatra";
-  font-weight: bold;
   color: white;
-  -webkit-text-stroke: px #f8f8f8;
   text-shadow: 10px 5px 10px gray;
   margin-bottom: 30px;
 }
-.index ::before {
+.hero ::before {
   content: "";
   top: 0;
   bottom: 0;
@@ -43,30 +43,14 @@ p {
   filter: grayscale(75%);
 }
 .tombol {
-  display: flex;
   color: white;
   border: 1px solid white;
   background-color: pink;
   font-family: "Alkatra";
-  width: 150px;
-  padding: 0px;
-  height: 50px;
+  padding: 10px;
   border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }
-.tombol a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  border-radius: 10px;
-  color: white;
-  justify-content: center;
-  align-items: center;
-}
-.tombol :hover {
+.tombol:hover {
   color: pink !important;
   border: 1px solid pink !important;
   background-color: white !important;
@@ -77,9 +61,6 @@ p {
   height: 20px;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
   margin-right: 5px;
 }
@@ -88,38 +69,4 @@ p {
 }
 .ff {
   font-family: "sacramento";
-  font-size: 1.5rem;
-}
-
-/* media query */
-
-/* laptop */
-@media (max-width: 992px) {
-  .index h4,
-  p {
-    font-size: 2rem;
-  }
-  .index h1 {
-    font-size: 3rem;
-  }
-}
-/* tablet */
-@media (max-width: 768px) {
-  .index h4,
-  p {
-    font-size: 1.8rem;
-  }
-  .index h1 {
-    font-size: 3rem;
-  }
-}
-/* mobile */
-@media (max-width: 576) {
-  .index h4,
-  p {
-    font-size: 1rem;
-  }
-  .index h1 {
-    font-size: 2rem;
-  }
 }
