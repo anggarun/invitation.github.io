@@ -1,9 +1,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Alkatra";
-}
-.navbar-nav a {
-  font-family: "Alkatra";
+  overflow-x: hidden;
 }
 .navbar {
   backdrop-filter: blur(2px);
@@ -42,7 +40,14 @@ p {
 .list-group-item span {
   float: right;
 }
-
+.logo {
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid pink;
+  box-shadow: -4px -4px 15px pink, 4px 4px 15px purple;
+  align-self: center;
+  justify-self: center;
+}
 .opening {
   position: relative;
   font-family: "Alkatra";
@@ -127,8 +132,15 @@ p {
   font-size: 1.1rem;
   letter-spacing: 0px;
 }
-.sosmed i {
-  font-size: 5%;
+.sosmed span a {
+  text-decoration: none;
+  color: purple;
+}
+.sosmed span a:hover {
+  color: pink;
+}
+.list-group span {
+  margin-left: 10px;
 }
 @keyframes rotating {
   from {
