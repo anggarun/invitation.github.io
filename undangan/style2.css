@@ -1,3 +1,7 @@
+body {
+  font-size: 1.2rem;
+  font-family: "Alkatra";
+}
 .navbar-nav a {
   font-family: "Alkatra";
 }
@@ -9,16 +13,19 @@
 }
 .ff {
   font-family: "sacramento";
-  font-size: 70px;
+  font-size: 3rem;
 }
 .mycontent {
-  font-size: 1.4rem;
   background-image: url(../img/—Slidesdocs—pink\ frame\ border\ flower\ shading_0abfa58172.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 200px;
   margin-top: -100px;
   padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .mycontent h1,
 h3,
@@ -27,6 +34,13 @@ p {
 }
 .tanggal {
   font-family: "Alkatra";
+}
+#tgl {
+  margin-right: 30px;
+  padding-top: 8%;
+}
+.list-group-item span {
+  float: right;
 }
 
 .opening {
@@ -43,6 +57,8 @@ p {
   transform: rotate(180deg);
   background-image: url(../img/—Slidesdocs—pink\ frame\ border\ flower\ shading_0abfa58172.jpg);
   z-index: -1;
+  background-position: center;
+  background-size: cover;
 }
 .informasi {
   position: relative;
@@ -84,9 +100,6 @@ p {
 .gift {
   font-family: "Alkatra";
 }
-.list-group {
-  font-size: 1.1rem;
-}
 .audio-container {
   display: block;
   width: 50px;
@@ -107,9 +120,15 @@ p {
   align-items: center;
   line-height: 0;
 }
-.musik {
-  color: purple;
-  font-size: 2rem;
+.beri {
+  margin-top: 60px;
+}
+.card-text {
+  font-size: 1.1rem;
+  letter-spacing: 0px;
+}
+.sosmed i {
+  font-size: 5%;
 }
 @keyframes rotating {
   from {
@@ -119,32 +138,43 @@ p {
     transform: rotate(360deg);
   }
 }
-/* media query */
+h3 {
+  font-size: 2rem;
+}
+.musik {
+  font-size: 2.5rem;
+}
+/* media queryes */
 
 /* laptop */
 @media (max-width: 992px) {
-  .mycontent {
-    padding-bottom: 50px !important;
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+    margin: 10px;
   }
 }
-.ff {
-  font-size: 60px;
-}
+
 /* tablet */
 @media (max-width: 768px) {
-  .mycontent {
-    padding-bottom: 20px !important;
+  html {
+    font-size: 70%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
   }
 }
-.ff {
-  font-size: 50px;
-}
+
 /* mobile */
-@media (max-width: 576) {
-  .mycontent {
-    padding-bottom: 20px !important;
+@media (max-width: 576px) {
+  html {
+    font-size: 65%;
   }
-}
-.ff {
-  font-size: 45px;
+  .simply-countdown > .simply-section {
+    padding: 55px;
+    margin: 3px;
+  }
 }
