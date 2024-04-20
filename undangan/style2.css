@@ -160,6 +160,9 @@ h3 {
 
 /* laptop */
 @media (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
   html {
     font-size: 75%;
   }
@@ -171,6 +174,9 @@ h3 {
 
 /* tablet */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   html {
     font-size: 70%;
   }
@@ -182,6 +188,9 @@ h3 {
 
 /* mobile */
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   html {
     font-size: 65%;
   }
