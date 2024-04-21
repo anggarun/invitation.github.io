@@ -65,6 +65,22 @@ p {
   background-position: center;
   background-size: cover;
 }
+
+.foto {
+  position: absolute;
+  width: 100vw;
+  padding: 3.5rem;
+  top: 38%;
+}
+.foto img {
+  width: 230px;
+  border-top-right-radius: 50% !important;
+  border-top-left-radius: 50% !important;
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  /* border: 2px solid salmon; */
+  /* box-shadow: 0 0 5px purple !important; */
+}
 .informasi {
   position: relative;
   font-family: "Alkatra";
@@ -157,6 +173,16 @@ h3 {
   font-size: 2.5rem;
 }
 /* media queryes */
+/* pc */
+@media (max-width: 1200px) {
+  .foto {
+    top: 47%;
+    padding: 2.5rem;
+  }
+  .foto img {
+    width: 170px;
+  }
+}
 
 /* laptop */
 @media (max-width: 992px) {
@@ -169,6 +195,13 @@ h3 {
   .simply-countdown > .simply-section {
     padding: 70px;
     margin: 10px;
+  }
+  .foto {
+    top: 45%;
+    padding: 2.5rem;
+  }
+  .foto img {
+    width: 130px;
   }
 }
 
@@ -184,6 +217,13 @@ h3 {
     padding: 60px;
     margin: 5px;
   }
+  .foto {
+    top: 51%;
+    padding: 2rem;
+  }
+  .foto img {
+    width: 110px;
+  }
 }
 
 /* mobile */
@@ -197,5 +237,12 @@ h3 {
   .simply-countdown > .simply-section {
     padding: 55px;
     margin: 3px;
+  }
+  .foto {
+    top: 52%;
+    padding: 1.5rem;
+  }
+  .foto img {
+    width: 90px;
   }
 }
