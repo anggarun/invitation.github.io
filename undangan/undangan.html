@@ -50,10 +50,10 @@
             </div>
             <div class="offcanvas-body mx-auto">
                 <div class="navbar-nav">
-                    <a class="nav-link js-scroll-trigger" href="#home" aria-label="Close">Home</a>
-                    <a class="nav-link" href="#info" aria-label="Close">Info</a>
-                    <a class="nav-link" href="#ungkapan" aria-label="Close">Ungkapan</a>
-                    <a class="nav-link" href="#gifts" aria-label="Close">Gifts</a>
+                  <button type="button" class="mybutton" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#home">Home</a></button>
+                  <button type="button" class="mybutton" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#info">Info</a></button>
+                  <button type="button" class="mybutton" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#ungkapan">Ungkapan</a></button>
+                  <button type="button" class="mybutton" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#gifts">Gifts</a></button>
                 </div>
             </div>
           </div>
@@ -93,7 +93,7 @@
           <div class="info p-3">
             <h3 class="mb-4">Assalamualaikum Wr Wb</h3>
             <p>Dengan memohon rahmat & ridho Allah Subhanahu Wata'ala,
-               Insya Allah kami akan menyelenggarakan acara pesta Pernikahan
+               Insya Allah kami akan menyelenggarakan acara Pernikahan
                putra dan putri kami : 
             </p>
             <h2 class="ff">Ahmad Damanhuri</h2>
@@ -251,14 +251,6 @@
         }
         play = !play;
       }
-      const navoff = document.querySelector('.offcanvas');
-      const semu = document.querySelector('.fade');
-      const a = document.querySelector('.nav-link');
-
-      a.addEventListener('click', sembuyi);
-      function sembunyi () {
-         navoff.hide();
-      }
     </script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -266,7 +258,7 @@
       AOS.init();
     </script>
     <script>
-      const myOffcanvas = document.getElementById('offcanvasNavbar')
+      const myOffcanvas = document.getElementById('#offcanvasNavbar')
       myOffcanvas.addEventListener('hide.bs.offcanvas', event => {
          myOffcanvas.style.overflow = 'hidden';
       })
@@ -274,6 +266,11 @@
       mynav.scroll = function () {
         mynav.style.position = 'fixed';
         mynav.style.top = 0;
+      }
+      const tutuplink = document.querySelector('.nav-link');
+      tutuplink.onclick = function(){
+          tutuplink.setAttribute('data-bs-dismiss', 'offcanvas');
+
       }
     </script>
 </body>

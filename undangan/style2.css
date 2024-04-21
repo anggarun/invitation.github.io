@@ -164,6 +164,16 @@ p {
 .list-group span {
   margin-left: 10px;
 }
+.mybutton {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 20%;
+}
+.mybutton a {
+  text-decoration: none;
+  color: black;
+}
 @keyframes rotating {
   from {
     transform: rotate(0);
