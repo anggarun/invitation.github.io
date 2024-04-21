@@ -38,7 +38,7 @@
 </head>
 <body>
     <nav class="navbar bg-light bg-opacity-75 navbar-expand-md fixed-top">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#" style="font-family: 'Sacramento'; font-size: 3rem; font-weight: bold; margin-left: 10px;">Sida</a>
           <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -270,6 +270,11 @@
       myOffcanvas.addEventListener('hide.bs.offcanvas', event => {
          myOffcanvas.style.overflow = 'hidden';
       })
+      const mynav = document.querySelector('.navbar');
+      mynav.scroll = function () {
+        mynav.style.position = 'fixed';
+        mynav.style.top = 0;
+      }
     </script>
 </body>
 </html>
