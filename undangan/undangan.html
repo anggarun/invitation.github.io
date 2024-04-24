@@ -52,6 +52,7 @@
                 <div class="navbar-nav">
                   <button type="button" class="mybutton m-3" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#home">Home</a></button>
                   <button type="button" class="mybutton m-3" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#info">Info</a></button>
+                  <button type="button" class="mybutton m-3" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#galleries">Gallery</a></button>
                   <button type="button" class="mybutton m-3" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#ungkapan">Ungkapan</a></button>
                   <button type="button" class="mybutton m-3" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#gifts">Gifts</a></button>
                 </div>
@@ -83,24 +84,34 @@
         <h4 id="tgl">10 - Mei - 2024</h4>
         </div>
     </div>
-    <div class="opening">
-      <div class="foto">
-        <img src="../img/idamtrans.png" data-aos="fade-right" class="rounded float-start" alt="...">
-        <img src="../img/sifatrans.png" data-aos="fade-left" class="rounded float-end" alt="...">
-      </div>
+    <div class="opening pb-3">
       <div class="row text-center d-flex justify-content-center align-items-center p-5">
         <div class="col-10">
           <div class="info p-3">
             <h3 class="mb-4">Assalamualaikum Wr Wb</h3>
-            <p>Dengan memohon rahmat & ridho Allah Subhanahu Wata'ala,
+            <p class="mb-4">Dengan memohon rahmat & ridho Allah Subhanahu Wata'ala,
                Insya Allah kami akan menyelenggarakan acara Pernikahan
                putra dan putri kami : 
             </p>
-            <h2 class="ff">Ahmad Damanhuri</h2>
-            <p>Putra kedua dari<br> Bapak Kh. Achmad Hidayatullah S.Pd.i & Ibu Hj. Iyatul Adawiyah S.Pd.i</p>
-            <h1>------  &  ------</h1>
-            <h2 class="ff">Sifa Fauziah</h2>
-            <p>Putri ke delapan dari<br> Bapak Kh. Ma'sum Sukaeji Thobroni (Alm) & Ibu Hj. Uyum Yuhanah (Almh)</p>
+            <div class="bg-mempelai mb-5" align="center">
+              <div class="card bg-mempelai foto-idam"  data-aos="zoom-in-up" id="bg-mempelai" style="width: 18rem;">
+                <img src="../img/i.jpeg" class="card-img-top bg-mempelai" alt="idam">
+                <div class="card-body">
+                  <h5 class="ff fs-2 mb-4">Ahmad Damanhuri</h5>
+                </div>
+              </div>
+            </div>
+            <p class="mb-4">Putra kedua dari<br> Bapak Kh. Achmad Hidayatullah S.Pd.i & Ibu Hj. Iyatul Adawiyah S.Pd.i</p>
+            <h1 class="mb-4">------  &  ------</h1>
+            <div class="bg-mempelai mb-5" align="center">
+              <div class="card bg-mempelai foto-idam"  data-aos="zoom-in-up" id="bg-mempelai" style="width: 18rem;">
+                <img src="../img/sifa.jpeg" class="card-img-top bg-mempelai" alt="idam">
+                <div class="card-body">
+                  <h5 class="ff fs-2 mb-0">Sifa Fauziah</h5>
+                </div>
+              </div>
+            </div>
+            <p class="mb-5">Putri ke delapan dari<br> Bapak Kh. Ma'sum Sukaeji Thobroni (Alm) & Ibu Hj. Uyum Yuhanah (Almh)</p>
           </div>
         </div>
       </div>
@@ -153,10 +164,21 @@
               </div>
           </div>
           <h5>Notice :</h5>
-          <p>Diharapkan bagi seluruh tamu undangan untuk datang pada waktu dan alamat yang telah di tentukan. Jika anda datang ke acara namun tidak melihat tanda-tanda acara sedang berlangsung boleh jadi anda salah alamat atau salah waktu.</p>
+          <p class="mb-5">Diharapkan bagi seluruh tamu undangan untuk datang pada waktu dan alamat yang telah di tentukan. Jika anda datang ke acara namun tidak melihat tanda-tanda acara sedang berlangsung boleh jadi anda salah alamat atau salah waktu.</p>
         </div>
       </div>
     </div>
+    <div class="container-gal" id="galleries">
+      <h3 class="mb-5 mt-3">Gallery Foto</h3>
+      <img src="../img/gal1.jpeg" class="preview-img" id="preview-img" alt="gambar 1">
+      <div class="galleries">
+        <img src="../img/gal1.jpeg" class="daftar-gambar" onclick="imgpreview(this.src)" alt="">
+        <img src="../img/gal2.jpeg" class="daftar-gambar" onclick="imgpreview(this.src)" alt="">
+        <img src="../img/gal3.jpeg" class="daftar-gambar" onclick="imgpreview(this.src)" alt="">
+        <img src="../img/gal4.jpeg" class="daftar-gambar" onclick="imgpreview(this.src)" alt="">
+        <img src="../img/gal5.jpeg" class="daftar-gambar" onclick="imgpreview(this.src)" alt="">
+        <img src="../img/gal6.jpeg" class="daftar-gambar" onclick="imgpreview(this.src)" alt="">
+      </div>
     </div>
     <div class="opening pt-5" id="ungkapan">
       <div class="row d-flex justify-content-center">
@@ -282,20 +304,15 @@
       AOS.init();
     </script>
     <script>
-      const myOffcanvas = document.getElementById('#offcanvasNavbar')
-      myOffcanvas.addEventListener('hide.bs.offcanvas', event => {
-         myOffcanvas.style.overflow = 'hidden';
-      })
-      const mynav = document.querySelector('.navbar');
-      mynav.scroll = function () {
-        mynav.style.position = 'fixed';
-        mynav.style.top = 0;
+      const imgpreview = (src) => {
+        document.getElementById('preview-img').src = src
       }
-      const tutuplink = document.querySelector('.nav-link');
-      tutuplink.onclick = function(){
-          tutuplink.setAttribute('data-bs-dismiss', 'offcanvas');
+      const imgprev = document.querySelector('.preview-img');
+      const dftgambar = document.querySelector('daftar-gambar');
+      dftgambar.onclick = function () {
+        imgprev.style.transition = '2s';
+      }
 
-      }
     </script>
 </body>
 </html>
