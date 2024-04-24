@@ -103,7 +103,7 @@ p {
 .jadwal-acara {
   display: grid;
   grid-template-columns: 40px 1fr;
-  padding-left: 18%;
+  padding-left: 12%;
 }
 .inya {
   text-align: left;
