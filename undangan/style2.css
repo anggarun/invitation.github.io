@@ -100,11 +100,14 @@ p {
   background-image: url(../img/—Slidesdocs—pink\ frame\ border\ flower\ shading_0abfa58172.jpg);
   z-index: -1;
 }
+.jadwal-acara {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  padding-left: 18%;
+}
 .inya {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  text-align: left;
+  margin-top: 5px;
 }
 .tombolmap {
   outline-color: pink;
