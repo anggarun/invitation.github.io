@@ -37,12 +37,6 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
   }
-  50% {
-    background-image: url(img/doublelove.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
   100% {
     background-image: url(img/love.jpeg);
     background-position: center;
