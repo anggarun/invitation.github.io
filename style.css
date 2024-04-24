@@ -32,7 +32,7 @@ h2 {
 }
 @keyframes change {
   0% {
-    background-image: url(img/1.jpeg);
+    background-image: url(img/love1.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ h2 {
     background-repeat: no-repeat;
   }
   100% {
-    background-image: url(img/2.jpeg);
+    background-image: url(img/love.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
