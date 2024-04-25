@@ -2,7 +2,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "Alkatra";
   overflow-x: hidden !important;
 }
@@ -102,8 +102,6 @@ p {
   align-items: center;
   flex-direction: column;
   position: relative;
-  background-image: url(../img/—Slidesdocs—pink\ frame\ border\ flower\ shading_0abfa58172.jpg);
-  background-position: center;
 }
 .preview-img {
   width: 80vw;
@@ -127,7 +125,7 @@ p {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 5));
+    transform: translateX(calc(-250px * 6));
   }
 }
 .galleries img {
@@ -147,6 +145,9 @@ p {
   left: 0;
   right: 0;
   background-image: url(../img/—Slidesdocs—pink\ frame\ border\ flower\ shading_0abfa58172.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: rotate(180deg);
   z-index: -1;
 }
 .jadwal-acara {
@@ -200,7 +201,7 @@ p {
   z-index: 999;
 }
 .beri {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .card-text {
   font-size: 1.1rem;
@@ -225,6 +226,13 @@ p {
 .mybutton a {
   text-decoration: none;
   color: black;
+}
+.container-gal {
+  background-image: url(../img/—Slidesdocs—pink\ frame\ border\ flower\ shading_0abfa58172.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 80px;
 }
 @keyframes rotating {
   from {
@@ -267,6 +275,10 @@ h3 {
   .foto img {
     width: 170px;
   }
+  .daftar-gambar {
+    width: 413px;
+    height: 689px;
+  }
 }
 
 /* laptop */
@@ -287,6 +299,10 @@ h3 {
   }
   .foto img {
     width: 130px;
+  }
+  .daftar-gambar {
+    width: 383px;
+    height: 659px;
   }
 }
 
@@ -309,6 +325,10 @@ h3 {
   .foto img {
     width: 110px;
   }
+  .daftar-gambar {
+    width: 353px;
+    height: 629px;
+  }
 }
 
 /* mobile */
@@ -329,5 +349,9 @@ h3 {
   }
   .foto img {
     width: 90px;
+  }
+  .daftar-gambar {
+    width: 323px;
+    height: 559px;
   }
 }
