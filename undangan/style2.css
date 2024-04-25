@@ -240,6 +240,23 @@ h3 {
 .musik {
   font-size: 2.5rem;
 }
+.penutup {
+  position: relative;
+  z-index: 0;
+}
+.penutup::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/couple.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  opacity: 0.3;
+}
 /* media queryes */
 /* pc */
 @media (max-width: 1200px) {
