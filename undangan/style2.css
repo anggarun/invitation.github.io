@@ -276,9 +276,9 @@ h3 {
   .foto img {
     width: 170px;
   }
-  .daftar-gambar {
-    width: 413px;
-    height: 689px;
+  .galleries img {
+    width: 100wv;
+    height: 160px;
   }
 }
 
@@ -301,9 +301,9 @@ h3 {
   .foto img {
     width: 130px;
   }
-  .daftar-gambar {
-    width: 60px;
-    height: 50px;
+  .galleries img {
+    width: 100wv;
+    height: 160px;
   }
   .preview-img {
     width: 650px;
@@ -330,9 +330,9 @@ h3 {
   .foto img {
     width: 110px;
   }
-  .daftar-gambar {
-    width: 353px;
-    height: 629px;
+  .galleries img {
+    width: 100wv;
+    height: 150px;
   }
   .preview-img {
     width: 550px;
@@ -359,9 +359,9 @@ h3 {
   .foto img {
     width: 90px;
   }
-  .daftar-gambar {
-    width: 323px;
-    height: 559px;
+  .galleries img {
+    width: 100wv;
+    height: 120px;
   }
   .preview-img {
     width: 350px;
